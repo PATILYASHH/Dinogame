@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dino Game</title>
+</head>
+<body>
+  <div class="game-container">
+    <div class="dino" id="dino"></div>
+    <div class="score" id="score">0</div>
+    <button class="jump-button" id="jumpButton">Jump</button>
+    <button class="restart-button" id="restartButton">Restart</button>
+    <button class="start-button" id="startButton">Start Game</button>
+  </div>
+
+  <!-- Modal for game over -->
+  <div id="gameOverModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <p class="modal-text">Game Over! Your score: <span id="modalScore">0</span></p>
+      <button class="modal-restart-button" id="modalRestartButton">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
